@@ -17,3 +17,23 @@ std::list<std::deque<int>> mylist;
 两个迭代器`begin`和`end`需要满足以下条件
 - 它们指向同一个容器中的元素，或者是容器最后一个元素之后的位置。
 - 我们可以通过反复递增`begin`来到达`end`。或句话说，`end`不应该在`begin`之前。
+
+## 练习9.4
+见源代码文件
+
+## 练习9.5
+```cpp
+int find(std::vector<int>::iterator begin, std::vector<int>::iterator end, int val)
+{
+    while (begin != end)
+    {
+        if (*begin == val)
+        {
+            return val;
+            break;
+        }
+        begin++;    
+    }
+    return false;
+}
+```

@@ -30,13 +30,16 @@ std::list<std::deque<int>> l;
 > 编写函数，接受一对指向vector<int>的迭代器和一个int值。在两个迭代器指定的范围中查找给定的值，返回一个布尔值来指出是否找到。
 
 ```cpp
-bool find(vector<int>::const_iterator begin, vector<int>::const_iterator end, int i)
+bool find(std::vector<int>::iterator begin, std::vector<int>::iterator end, int val)
 {
-	while (begin++ != end)
-	{
-		if (*begin == i) 
-			return true;
-    }	
+    while (begin != end)
+    {
+        if (*begin == val)
+        {
+            return true;
+        }
+        begin++;    
+    }
     return false;
 }
 ```
