@@ -19,7 +19,7 @@ std::list<std::deque<int>> mylist;
 - 我们可以通过反复递增`begin`来到达`end`。或句话说，`end`不应该在`begin`之前。
 
 ## 练习9.4
-见源代码文件
+[源代码](https://github.com/fsZhuangB/Cpp_Primer_Answers/blob/master/ch09/exercise9_4_fs.cpp) 
 
 ## 练习9.5
 ```cpp
@@ -37,3 +37,7 @@ int find(std::vector<int>::iterator begin, std::vector<int>::iterator end, int v
     return false;
 }
 ```
+
+## 练习9.6
+
+`while (iter1 < iter2)` 这句话有错误，迭代器拥有迭代器范围，应该改成`while (iter1 != iter2)`
