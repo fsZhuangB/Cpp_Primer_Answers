@@ -41,3 +41,14 @@ int find(std::vector<int>::iterator begin, std::vector<int>::iterator end, int v
 ## 练习9.6
 
 `while (iter1 < iter2)` 这句话有错误，迭代器拥有迭代器范围，应该改成`while (iter1 != iter2)`
+
+## 练习9.7
+```cpp
+vector<int>::size_type;
+```
+
+## 练习9.8
+```cpp
+list<string> const_iterator;  // 读
+list<string> iterator;        // 写
+```
